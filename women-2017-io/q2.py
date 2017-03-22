@@ -15,9 +15,9 @@ for i in range(1, t + 1):
   probs = sorted(probs)
   # print(probs)  
   prob_success = 1.0
-  for i in range(n):
+  for j in range(n):
     # print(i,2*n-i-1,probs[i], probs[2*n-i-1])
-    prob_success *= (1 - probs[i]*probs[2*n-i-1])
+    prob_success *= (1 - probs[j]*probs[2*n-j-1])
 
 
   # cases = list(generate_groups(range(len(probs)),2))
